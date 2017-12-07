@@ -1,6 +1,6 @@
 **Scripting Linux**
 --------------------------
-##Team
+## Team
    * Animateur : **Florian [FloFlo]**
    * Secrétaire : **Hugo [Yugo]**
    * Scribe : **Emilien [Emilio]**
@@ -16,7 +16,7 @@
    * Sauvegarde :
    * commande ls :
    * commande cd :
-   * Création d'un nouveau sous domaine
+   * Création d'un nouveau sous domaine :
    * Hôte Virtuel : 
    * Terminal Linux : 
    * Commande peut-être lancée depuis n'importe où : 
@@ -54,7 +54,7 @@
  * ls et cd sont des commandes systèmes qui permettent de se déplacer dans l'architecture Linux
  * On peut utiliser Cron pour automatiser les scripts
  * Pour pouvoir coder en bash (script) -> #!/bind/bash
- * lancer script -> .nonScript
+ * lancer script -> .nomScript
  * Bind9 est un serveurDNS
  * Pour save on a besoin d'autorisations spécifiques
  * ScriptExtention => .sh
@@ -67,7 +67,7 @@
   * Réviser Crontab
   * Etudier le bash (Synthaxe, interpréteur, librairies, typage langage, paradigme, fonctions ?, objets ?)
   
-###Réalistions
+### Réalistions
 * Installer puis configurer Apache
 * Configurer le DNS
 * Avoir deux sites disponibles sous Apache
