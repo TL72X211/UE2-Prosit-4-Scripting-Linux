@@ -94,7 +94,15 @@
 	* .htacess (zone sécurisées)
 * Pour le démarrer -> _service apache2 start_
 
-**Bind9**
+**Bind9**	
+
+* Installer le paquet _bind9_ et _dnsutils_ (pour tester et débuguer le service DNS)
+* Les fichiers de configuration sont dans _/etc/bind_
+	* named.conf
+	* named.conf.options
+	* named.conf.local
+* En fonction de la configuration que l'on souhaite, il faut suivre le tutoriel suivant  : https://doc.ubuntu-fr.org/bind9
+
 	
 
 
