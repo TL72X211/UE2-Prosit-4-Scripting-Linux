@@ -75,7 +75,28 @@
 	* Un pour sauvegarder les fichiers de configurations
 	* Créer site
 
+#### **I - Apache et Bind9**
+
+**Apache** est un serveur HTTP, c'est le plus populaire sur le WWW.
+
+* Installer le paquet _apache2_
+* On configure les interfaces d'écoute (n° port)-> _/etc/apache2/ports.conf_
+* On configure apache2 dans _/etc/apache2/apache2.conf_
+	* https://doc.ubuntu-fr.org/apache2
+* On configure les vhosts dans _/etc/apache2.sites-available_
+	* Par défaut, il n'y a que le default.conf, il faut donc le modifier (son nom y compris)
+	* Une fois modifié, on doit supprimer l'ancien lien symbolique grâce à _a2dissite default_
+	* On active enfin le vhost, en créant le lien sympolique, ce qui va le passer dans le répertoire _/sites-enabled_ grâce à la commande  _a2ensite nomduvhost_
+	* On modifie enfin, dans _/etc/_hosts_ la ligne, avec _127.0.0.1 localhost nomduvhost_ , pour permettre à notre machine locale de faire la correspondance entre le nom de l'hôte et notre machine locale.
+* On pourra y activer bon nombre de sécurités (voir doc officielle)
+	*  Sécurité des pages
+	* Pare-Feu
+	* .htacess (zone sécurisées)
+* Pour le démarrer -> _service apache2 start_
+
+**Bind9**
 	
-	..JE SUIS UN TEST POUR GITKRAKEN
+
+
 
 
