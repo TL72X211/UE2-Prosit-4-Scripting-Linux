@@ -7,22 +7,22 @@
    * Gestionnaire : **Maxime [Vibrophone]**
 
 ## Mots Clés
-   * /var/www : 
-   * Fichier de configuration : 
-   * DNS : 
-   * Automatiser le processus : 
-   * Bind9 :
-   * Apache 2: 
-   * Sauvegarde :
-   * commande ls :
-   * commande cd :
-   * Création d'un nouveau sous domaine :
-   * Hôte Virtuel : 
-   * Terminal Linux : 
-   * Commande peut-être lancée depuis n'importe où : 
-   * Chemin Relatif :
-   * Chemin Absolu :
-   * Nom de domaine :
+   * /var/www : Chemin par défaut, que le serveur Apache utilise. Si on continu avec /html c'est le répertoire par défaut pour y déposer nos sites web.
+   * Fichier de configuration : Fichier à modifier pour y configurer des services ou autre.
+   * DNS : Domain Name Service.
+   * Automatiser le processus : Rendre un processus à s'éxecuter par lui même à un temps, une période donnée.
+   * Bind9 : Outil principal pour faire du DNS, c'est à dire le mettre en place et le configurer.
+   * Apache 2:  Serveur HTTP (+ web) le plus populaire sur internet.
+   * Sauvegarde : Copie des données. Il en existe plusieurs types, et nous les avons vu dans les PROSIT précédents.
+   * commande ls : Liste les fichiers sur le répertoire actuel, ou un répertoire donné en argument. 
+   * commande cd : Donne la possibilité de se déplacer. Un point indique le répertoire courant, et deux points le répertoire précèdent.
+   * Création d'un nouveau sous domaine :  Sous partie d'un nom de domaine. Pour se faire on  doit ajouter à notre fichier de zone, une entrée de type CNAME. Pour plus d'infos:  https://wiki.gandi.net/fr/dns/zone/subdomain
+   * Hôte Virtuel : Méthode que le serveur, et les serveurs web utilisent pour accueillir plus d'un nom de domaine sur le même ordinateur.
+   * Terminal Linux : Console Linux, qui nous permet d'intéragir avec le système.
+   * Commande peut-être lancée depuis n'importe où : Lancement du script depuis un autre ordinateur.
+   * Chemin Relatif : Se réfère au dossier parent, c'est en partant du dossier parent jusqu'à arriver à l'endroit ciblé.
+   * Chemin Absolu : Chemin tracé à partir de l'emplacement dans lequel le fichier, ou notre position se trouve.
+   * Nom de domaine : Nom qui remplace une adresse IP (Grâce au DNS)
 
 ## Contexte
 
