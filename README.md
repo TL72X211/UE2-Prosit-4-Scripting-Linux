@@ -123,9 +123,44 @@ Va demander 2 entrées clavier et les placer dans les variables \$entree1 et \$e
 * PID de la dernière commande exécutée en tâche de fond : $ !
 * Pour terminer le script : exit <valeur> , cette valeur sera stockée dans $ ? à la fin de l’exécution du script, par convention on retourne 0 si tout se passe bien et 1 si il y a eu une erreur
 
-**conditions itératives**
 
-* while : 
+**conditions itératives**
+The for loop is a little bit different from other programming languages. Basically, it let's you iterate over a series of 'words' within a string.
+The while executes a piece of code if the control expression is true, and only stops when it is false (or a explicit break is found within the executed code.
+The until loop is almost equal to the while loop, except that the code is executed while the control expression evaluates to false.
+
+
+* while : 	
+Permet entre autre de tester les arguments passés au programme et les traiter, elle sera donc au début de script
+
+While [ <condition>]
+do
+	opérations
+done
+
+For <variable> in <variable>
+Do
+	Operations
+Done
+
+Until [<condition]
+Do
+	Operations
+Done
+
+
+Fonctions :
+Function nomFonction {
+	opérations
+}
+Fonction avec paramètres :
+
+Function nomFonction {
+	Echo $1
+}
+Va afficher le premier paramètre qu’on passe à la fonction
+Pour appeller une function on utilise son nom
+
 
 
 Commandes : 
@@ -136,7 +171,45 @@ Help affiche la liste des commandes internet du shell
   
 ### Réalistions
 * Installer puis configurer Apache
+Un s’assure d’abord d’avoir sa machine à jour
+apt-get update
+on intalle apache2, la doc et les utilitées
+apt-get install apache2 apache2-doc apache2-utils
+
+on désactive KeepAlive dans le fichier de congif principal
+nano /etc/apache2/apache2.conf
+on cherche KeepAlive (vers le milieu du fichier) et on le passe de on à off
+
+Configurer les virtual host :
+ On désactive celui par défaut
+a2dissite 000-default.conf
+il nous dit « Site 000-default disabled.
+To activate the new configuration, you need to run:
+  service apache2 reload »
+créé un virtual host : 
+on créé <nomdesite<.conf dans /etc/apache2/sites-available  par exemple exemple.com.conf
+<VirtualHost *:80>
+     ServerAdmin webmaster@example.com
+     ServerName example.com
+     ServerAlias www.example.com
+     DocumentRoot /var/www/example.com/public_html/
+     ErrorLog /var/www/example.com/logs/error.log
+     CustomLog /var/www/example.com/logs/access.log combined
+</VirtualHost>
+
+On  créé le répertoire pour lesite et les logs
+sudo mkdir -p /var/www/example.com/public_html
+sudo mkdir /var/www/example.com/logs
+
+on active le site 
+sudo a2ensite example.com.conf
+
+on redémare apache:
+sudo systemctl restart apache2
+
+
 * Configurer le DNS
+
 * Avoir deux sites disponibles sous Apache
 * Créer deux scripts : 
 	* Un pour sauvegarder les fichiers de configurations
