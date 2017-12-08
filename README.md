@@ -103,8 +103,35 @@
 	* named.conf.local
 * En fonction de la configuration que l'on souhaite, il faut suivre le tutoriel suivant  : https://doc.ubuntu-fr.org/bind9
 
-	
+#### **II - Créer un script shell**
 
+Un shell est un _**interpréteur de commandes**_ , c'est un programme spécial qui joue le rôle d'intermédiaire en interprétant des commandes rentrés par l'utilisateur.
 
+**Comment faire un script en shell :**
 
+* Ecrire un script (On utilise _nano_ ou _vi_ comme éditeurs de textes)
+* Changer les permission de ce script ( tout pour le proprio, et le reste est en write and execute)
+	* _chmod +x [nomscript]_
+	*  _chmod 755 [nomscript]_
+	* Pour exécuter un script _./nomscript_ ou _bash nomscript_ ou _sh nomscript_
+* L'extension d'un script shell est .sh
+* On marque _#!/bin/sh_ au début de notre script, c'est un 'shebang' pour définir quel interpréteur utiliser. (Ici, du sh, mais on aurait pu mettre du Python).
+* On utilise des $, comme dans un script serveur, pour utiliser les différentes variables.
 
+Un bel exemple au niveau des arguments : http://www.linux-france.org/article/memo/node83.html
+Le système des **While**  : http://www.linux-france.org/article/memo/node84.html
+A la différence des autres langages, on utilise while [cond] do [actions]  done pour en faire.
+**esac** sert comme les fi (end if), mais pour les switch case.
+Les **options** sur les vérifications : http://www.linux-france.org/article/memo/node86.html
+Le **if** + Script sauvegarde : http://www.linux-france.org/article/memo/node87.html
+{...} Sur ce site, on retrouvera ainsi comment faire une **fonction et autres**.
+
+On retrouve aussi une **boucle "select"** (nouveauté)
+
+C'est une structure de contrôle de type boucle qui permet d'afficher de manière cyclique un menu.
+A chaque tour de boucle, on a ainsi la liste des items qui est affiché.
+
+* PS3 => saisie du choix utilisateur. Sa valeur par défaut est #?
+* REPLY contiendra l'indice de l'item sélectionné.
+
+#### **III - Révisions de Crontab**
