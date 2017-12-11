@@ -7,22 +7,22 @@
    * Gestionnaire : **Maxime [Vibrophone]**
 
 ## Mots Clés
-   * /var/www : 
-   * Fichier de configuration : 
-   * DNS : 
-   * Automatiser le processus : 
-   * Bind9 :
-   * Apache 2: 
-   * Sauvegarde :
-   * commande ls :
-   * commande cd :
-   * Création d'un nouveau sous domaine :
-   * Hôte Virtuel : 
-   * Terminal Linux : 
-   * Commande peut-être lancée depuis n'importe où : 
-   * Chemin Relatif :
-   * Chemin Absolu :
-   * Nom de domaine :
+   * /var/www : Fichier racine par défaut des sites sur Apache (Nico)
+   * Fichier de configuration : / 
+   * DNS : /
+   * Automatiser le processus : /
+   * Bind9 : /
+   * Apache 2: /
+   * Sauvegarde : /
+   * commande ls : Liste des répertoires et des fichiers (P.s)
+   * commande cd : Se déplacer dans l'arborescence des répertoires (Max)
+   * Création d'un nouveau sous domaine : /
+   * Hôte Virtuel : /
+   * Terminal Linux : /
+   * Commande peut-être lancée depuis n'importe où : /
+   * Chemin Relatif : Chemin à partir de là où on est (Pierre)
+   * Chemin Absolu : (Pierre)
+   * Nom de domaine : (Nico)
 
 ## Contexte
 
@@ -62,10 +62,20 @@
 ## Plan d'action
 
 ### Études
-  * Réviser Apache et Bind9
-  * Comment créer un script
+  * Réviser Apache et Bind9 : Apache -> Nico
+  Bind9-> Emilien + resolv.conf -> fichier de zone
+  * Comment créer un script -> **LS** + **Pierre** (Types de Shell) + Diagramme des types de Shell + "Instalable partout" + "Par défaut, on a bash installé sur toutes les distribs" + **Nico** (shebang)
+  
+  **Pierre.s** : On crée un .sh (Pas obligatoire), On met le Shebang, On écrit le script, Chmod 755 (Exécution très importante), './ [nomscript]' pour lancer un script.
+ 
+ 
   * Réviser Crontab
-  * Etudier le bash (Synthaxe, interpréteur, librairies, typage langage, paradigme, fonctions ?, objets ?)
+  * Etudier le bash (Synthaxe, interpréteur, librairies, typage langage, paradigme, fonctions ?, objets ?) -> **Pierre** (variables en globalité, affichage, tableaux, conditions, structures de contrôles, conditions, tests & tests sur variables de fichiers, liens symboliques, boucles, fonctions **à placer avant le main**)
+  
+  Certaines fonctions ont besoin d'un ';' (Max) ==> Non (David)
+  
+  On ne met pas le '$'pour déclarer une variable, mais on doit l'utiliser pour les variables (Flo)
+  
   
 ### Réalistions
 * Installer puis configurer Apache
