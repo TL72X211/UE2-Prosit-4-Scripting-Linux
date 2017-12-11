@@ -119,16 +119,23 @@ Un shell est un _**interpréteur de commandes**_ , c'est un programme spécial q
 * On utilise des $, comme dans un script serveur, pour utiliser les différentes variables.
 
 Un bel exemple au niveau des arguments : http://www.linux-france.org/article/memo/node83.html
+
 Le système des **While**  : http://www.linux-france.org/article/memo/node84.html
+
 A la différence des autres langages, on utilise while [cond] do [actions]  done pour en faire.
+
 **esac** sert comme les fi (end if), mais pour les switch case.
+
 Les **options** sur les vérifications : http://www.linux-france.org/article/memo/node86.html
+
 Le **if** + Script sauvegarde : http://www.linux-france.org/article/memo/node87.html
+
 {...} Sur ce site, on retrouvera ainsi comment faire une **fonction et autres**.
 
 On retrouve aussi une **boucle "select"** (nouveauté)
 
 C'est une structure de contrôle de type boucle qui permet d'afficher de manière cyclique un menu.
+
 A chaque tour de boucle, on a ainsi la liste des items qui est affiché.
 
 * PS3 => saisie du choix utilisateur. Sa valeur par défaut est #?
