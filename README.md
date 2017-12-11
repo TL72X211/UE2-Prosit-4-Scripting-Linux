@@ -135,3 +135,12 @@ A chaque tour de boucle, on a ainsi la liste des items qui est affiché.
 * REPLY contiendra l'indice de l'item sélectionné.
 
 #### **III - Révisions de Crontab**
+
+**cron** est un programme qui permet aux utilisateurs des systèmes Unix d’exécuter automatiquement des scripts, des commandes ou des logiciels à une date et une heure spécifiées à l’avance, ou selon un cycle défini à l’avance.
+
+* crontab -e : modifier le fichier cron (on y insère les heures et les actions)
+* crontab -l : consulter le fichier cron
+
+Par défaut, ce script est situé dans : var/spool/cron/tabs/< nomUtilisateur >
+
+Plus d'infos (heures & config ) : https://fr.wikipedia.org/wiki/Cron
