@@ -74,6 +74,7 @@ Plan d'action
 - Réviser Apache et Bind9 :
 	- Apache est serveur HTTP. Tout d'abord il faut configurer les ports d'écoute d'apache en faisant "nano /etc/apache2/ports.conf" ensuite il faut configurer apache2 avec "nano /etc/apache2/apache2.conf". Il nous faut aussi configurer les virtual hosts avec dans /etc/apache2.sites-available. Puis nous devons activé les sécurités liés à Apache. Enfin pour le démarrer il suffit de faire "service apache 2 start".
 	- Bind9 est un serveur DNS. Tout d'abord il faut installer les paquets bind9 et dnsutils afin de tester et débuguer le service DNS. Ensuite, nous pouvons le configurer dans les fichiers (named.conf, named.conf.options et named.conf.local) situé dans /etc/bind.
+	
 - Comment créer un script :
 	- Pour créer un script, nous devons utiliser un interpréteur de commande, le shell. Il existe plusieurs shells, nous pouvons voir la liste dans "/etc/shells". Les plus connues sont le bash (Bourne Again Shell), le ksh (Korn shell) et le tcsh (Tenex C shell). Dans Linux, le bash est installé par défaut, il est le plus puissant et le plus utilisé.
 		L'initialisation d'un script se fais grâce à plusieurs scripts nous permettant de le personnaliser. Les fichiers lus et exécutés sont :
@@ -87,8 +88,6 @@ Plan d'action
 	- Pour personnaliser le shell bash on doit modifier "$HOME/.bash_profile" et/ou "$HOME/.bashrc".
 Les scripts sont des fichiers exécutables permettant de lancer plusieurs commande.
 
-- Réviser Crontab :
-	- 
 - Etudier le bash (Syntaxe, interpréteur, librairies, typage langage, paradigme, fonctions ?, objets ?) :
 	* Syntaxe : 
 		* les métacaractères du shell : caractère possédant une signification autre que la littérale ( "*" ne représente pas le caractère étoile pour le bash, il le lit comme représentant n'importe quelle suite de caractère ou une absence). Ils se divisent en deux classes : ceux de substitution et ceux de protection des caractères.
