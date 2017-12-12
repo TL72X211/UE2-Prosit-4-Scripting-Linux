@@ -103,7 +103,8 @@ Les scripts sont des fichiers exécutables permettant de lancer plusieurs comman
 			* Pour former un des caractères spéciaux du C : 
 			* Avant un méta-caractère de bash : les méta-caractères tel que "*" ne sont pas interprétés par bash en tant que littéraux tel que les commandes find et sed. Exemple : pour trouver les fichier commencant par my il faut utiliser "find . -name my\*". 
 			![Caractère échapement](https://github.com/TL72X211/UE2-Prosit-4-Scripting-Linux/blob/Hugo-DELTOUR/img%20prosit%204/caract%C3%A8re%20d'%C3%A9chapement%20%20carac%20sp%C3%A9%20C.PNG)
-		* Gestion de processus : ![Gestion Processus](https://github.com/TL72X211/UE2-Prosit-4-Scripting-Linux/blob/Hugo-DELTOUR/img%20prosit%204/gestion%20de%20processus.PNG)
+		* Gestion de processus : 
+			![Gestion Processus](https://github.com/TL72X211/UE2-Prosit-4-Scripting-Linux/blob/Hugo-DELTOUR/img%20prosit%204/gestion%20de%20processus.PNG)
 		* Gestion de flux : chaque commande est associée à trois flux : l'entrée standard, la sortie standard et la sortie d'erreur standard. Ci dessous les méthode d'utilisation : ![Gestion Flux](https://github.com/TL72X211/UE2-Prosit-4-Scripting-Linux/blob/Hugo-DELTOUR/img%20prosit%204/gestion%20de%20flux.PNG)
 		* Variable du shell : les variables sont référencées en faisant précéder $ de la variable désirée.
 		* Substitution de commande : on peut remplacer, dans une ligne de commande, un argument par son résultat en l'entourant de "`" ou en utilisant $().
