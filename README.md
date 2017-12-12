@@ -1,4 +1,4 @@
-**Scripting Linux**
+﻿**Scripting Linux**
 --------------------------
 ## Team
    * Animateur : **Florian [FloFlo]**
@@ -64,9 +64,23 @@
 ### Études
   * Réviser Apache et Bind9
   * Comment créer un script
+
+![scripts](images/0.png)
+
   * Réviser Crontab
   * Etudier le bash (Synthaxe, interpréteur, librairies, typage langage, paradigme, fonctions ?, objets ?)
-  
+
+![interpréteur](images/1.png)
+![variable](images/2.png)
+![environnement](images/3.png)
+![paramètre](images/4.png)
+![tableau](images/5.png)
+![condition0](images/6.png)
+![condition1](images/7.png)
+![condition2](images/8.png)
+![boucles](images/9.png)
+![fonctions](images/10.png)
+
 ### Réalistions
 * Installer puis configurer Apache
 * Configurer le DNS
