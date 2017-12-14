@@ -151,3 +151,6 @@ A chaque tour de boucle, on a ainsi la liste des items qui est affiché.
 Par défaut, ce script est situé dans : var/spool/cron/tabs/< nomUtilisateur >
 
 Plus d'infos (heures & config ) : https://fr.wikipedia.org/wiki/Cron
+
+
+![](https://github.com/TL72X211/UE2-Prosit-4-Scripting-Linux/blob/Emilien/Screens_Main/Langages.PNG)
